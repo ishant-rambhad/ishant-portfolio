@@ -87,7 +87,7 @@ section {
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background: url('/images/home.jpg') no-repeat;
+    background-color: #112e42;
     background-size: cover;
     background-position: center;
 }
@@ -697,6 +697,28 @@ span {
 .footer-iconTop a:hover i {
     color: var(--main-color);
 }
+.footer-social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Spacing between icons */
+    margin: 20px 0;
+}
+
+.footer-social-icons .social-link i {
+    font-size: 40px; /* Adjust icon size */
+    color: #8082d0; /* Icon color */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-social-icons .social-link i:hover {
+    color: #0077b5; /* Change color on hover for LinkedIn (LinkedIn blue) */
+    transform: scale(1.2); /* Scale effect on hover */
+}
+
+.footer-social-icons .social-link:nth-child(1) i:hover {
+    color: #8082d0; /* Change color on hover for GitHub (GitHub black) */
+}
+
 
 /* ANIMATION RELOAD AND SCROLL */
 .animate {
